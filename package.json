@@ -8,11 +8,27 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "storybook": "NODE_OPTIONS=--open-ssl-legacy-provider start-storybook -p 6006",
+    "build-storybook": "NODE_OPTIONS=--open-ssl-legacy-provider build-storybook"
   },
   "dependencies": {
     "@astrojs/svelte": "^1.0.2",
     "astro": "^1.6.0",
     "svelte": "^3.46.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/cli": "^6.5.13",
+    "@storybook/manager-webpack4": "^6.5.13",
+    "@storybook/svelte": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
+    "svelte-loader": "^3.1.3"
   }
 }
